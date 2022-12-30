@@ -4,16 +4,16 @@ html,body{
     height: 100%;
     margin: 0px;
     padding: 0px;
-	background-color: #000000;
+	background-color: #141314;
 	color:white;
 	font-family: Roboto, Arial;
 
 p{
-	color: white;
+	color: #c2c4c3;
 }
 
 h1, h2, h3 {
-	color: white;
+	color: #c2c4c3;
 }
 
 .table_of_contents{
@@ -27,18 +27,18 @@ h1, h2, h3 {
 }
 
 a:link {
-  	color: white;
+  	color: #c2c4c3;
 	text-decoration: none;
 }
 
 a:visited {
-  	color: white;
+  	color: #c2c4c3;
 }
 
 a:hover {
- 	color: gray;
+ 	color: white;
 }
 
 a:active {
-  	color: white;
+  	color: #c2c4c3;
 } 
