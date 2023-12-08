@@ -17,8 +17,8 @@
             <div class="col-md-3 sidebar">
                 <h2 class="header">az-hash256 Home Page</h2>
                 <ul class="nav nav-pills nav-stacked">
-                    <li><a href="javascript:void(0)" onclick="toggleSection('aboutMe')">About Me</a></li>
-                    <li><a href="javascript:void(0)" onclick="loadEssaysContent()">Essays</a></li>
+                    <li><a href="javascript:void(0)" onclick="toggleSection('aboutMe', 'essays')">About Me</a></li>
+                    <li><a href="javascript:void(0)" onclick="toggleSection('essays', 'aboutMe')">Essays</a></li>
                     <li><a href="https://twitter.com/arellafi">My Twitter</a></li>
                     <li><a href="https://github.com/az-hash256">My Github</a></li>
                 </ul>
@@ -50,13 +50,20 @@
             // Add more essays as needed
         ];
 
-        function toggleSection(sectionId) {
-            var section = document.getElementById(sectionId);
+        function toggleSection(showId, hideId) {
+            var showSection = document.getElementById(showId);
+            var hideSection = document.getElementById(hideId);
 
-            if (section.style.display === "none") {
-                section.style.display = "block";
+            // Toggle the visibility of the showSection
+            if (showSection.style.display === "none") {
+                showSection.style.display = "block";
             } else {
-                section.style.display = "none";
+                showSection.style.display = "none";
+            }
+
+            // Hide the hideSection
+            if (hideSection.style.display === "block") {
+                hideSection.style.display = "none";
             }
         }
 
@@ -82,7 +89,7 @@
             essaysContent.appendChild(essaysList);
 
             // Toggle the visibility of the essays section
-            toggleSection('essays');
+            toggleSection('essays', 'aboutMe');
         }
     </script>
 </body>
