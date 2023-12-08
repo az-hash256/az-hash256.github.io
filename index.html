@@ -18,7 +18,7 @@
                 <h2 class="header">az-hash256 Home Page</h2>
                 <ul class="nav nav-pills nav-stacked">
                     <li><a href="javascript:void(0)" onclick="toggleSection('aboutMe', 'essays')">About Me</a></li>
-                    <li><a href="javascript:void(0)" onclick="toggleSection('essays', 'aboutMe')">Essays</a></li>
+                    <li><a href="javascript:void(0)" onclick="loadEssaysContent()">Essays</a></li>
                     <li><a href="https://twitter.com/arellafi">My Twitter</a></li>
                     <li><a href="https://github.com/az-hash256">My Github</a></li>
                 </ul>
@@ -50,6 +50,8 @@
             // Add more essays as needed
         ];
 
+        var essaysContentLoaded = false;
+
         function toggleSection(showId, hideId) {
             var showSection = document.getElementById(showId);
             var hideSection = document.getElementById(hideId);
@@ -57,13 +59,18 @@
             // Toggle the visibility of the showSection
             if (showSection.style.display === "none") {
                 showSection.style.display = "block";
+
+                // Hide the hideSection
+                if (hideSection.style.display === "block") {
+                    hideSection.style.display = "none";
+                }
+
+                // Load essays content if it hasn't been loaded
+                if (showId === 'essays' && !essaysContentLoaded) {
+                    loadEssaysContent();
+                }
             } else {
                 showSection.style.display = "none";
-            }
-
-            // Hide the hideSection
-            if (hideSection.style.display === "block") {
-                hideSection.style.display = "none";
             }
         }
 
@@ -88,8 +95,8 @@
             // Append the list to the essaysContent div
             essaysContent.appendChild(essaysList);
 
-            // Toggle the visibility of the essays section
-            toggleSection('essays', 'aboutMe');
+            // Set the flag to true to indicate content has been loaded
+            essaysContentLoaded = true;
         }
     </script>
 </body>
