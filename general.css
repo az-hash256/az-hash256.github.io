@@ -32,6 +32,7 @@ ul {
     margin: 0;
     font-size: 20px;
     color: #61538D;
+    margin-left: 10px; /* Adjust the left margin to your preference */
 }
 
 img {
@@ -84,6 +85,7 @@ h1 {
     background-color: #1E1E1E;
     padding-top: 20px;
     height: 100vh;
+    margin-left: 20px; /* Adjust the left margin to your preference */
 }
 
 .sidebar h2 {
