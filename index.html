@@ -14,23 +14,27 @@
         <div class="row">
 
             <!-- Sidebar -->
-            <div class="col-sm-3 sidebar">
+            <div class="col-md-3 sidebar">
                 <h2 class="header">az-hash256 Home Page</h2>
                 <ul class="nav nav-pills nav-stacked">
                     <li><a href="javascript:void(0)" onclick="toggleSection('aboutMe')">About Me</a></li>
-                    <li><a href="essays.html">Essays</a></li>
+                    <li><a href="javascript:void(0)" onclick="loadEssaysContent()">Essays</a></li>
                     <li><a href="https://twitter.com/arellafi">My Twitter</a></li>
                     <li><a href="https://github.com/az-hash256">My Github</a></li>
                 </ul>
             </div>
 
             <!-- Main Content -->
-            <div class="col-sm-9">
+            <div class="col-md-9">
                 <div id="aboutMe" style="display: none;">
                     <h1 class="header" id="section1">About Me</h1>
                     <p>This is the content of the "About Me" section.</p>
                 </div>
 
+                <div id="essays" style="display: none;">
+                    <h1 class="header">Essays</h1>
+                    <div id="essaysContent"></div>
+                </div>
             </div>
 
         </div>
@@ -42,11 +46,26 @@
     <script>
         function toggleSection(sectionId) {
             var section = document.getElementById(sectionId);
+
             if (section.style.display === "none") {
                 section.style.display = "block";
             } else {
                 section.style.display = "none";
             }
+        }
+
+        function loadEssaysContent() {
+            var essaysSection = document.getElementById('essays');
+            var essaysContent = document.getElementById('essaysContent');
+
+            // Simulate loading content dynamically (you can replace this with your own logic)
+            var content = "<p>Essay 1: Content goes here...</p><p>Essay 2: Content goes here...</p>";
+
+            // Update the essays content
+            essaysContent.innerHTML = content;
+
+            // Toggle the visibility of the essays section
+            toggleSection('essays');
         }
     </script>
 </body>
