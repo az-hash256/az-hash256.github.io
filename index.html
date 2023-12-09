@@ -28,8 +28,14 @@
             <div class="col-md-9">
                 <div id="aboutMe" style="display: none;">
                     <h1 class="header" id="section1">About Me</h1>
-                    <p>This is the content of the "About Me" section.</p>
-                </div>
+        	    
+		    <div class="about-me-box">
+		    	<p class="about-me-paragraph">I am a computer science student with an interest in philosophy and effective altruism. My academic interests revolve around formal systems and theoretical computer science, I particularly enjoy Theory of Computation. My current goal is eventual employment in AI alignment.</p>
+        	    	<p class="about-me-paragraph">In the programming realm, I favor functional languages like OCaml and Haskell for a variety of reasons.</p>
+        	    	<p class="about-me-paragraph">Beyond academics, I enjoy reading, writing essays on a variety of topics that interest me, browsing imageboards and the web generally, and watching UFC.</p>
+        	    	<p class="about-me-paragraph">To conclude, I am a computer science student interested in the intersection of philosophy, effective altruism, formal systems, theoretical computer science, decision theory, and AI.</p>
+		    </div>
+		</div>
 
                 <div id="essays" style="display: none;">
                     <h1 class="header">Essays</h1>
@@ -43,48 +49,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <script>
-        var essaysData = [
-            { title: "Russell's Descriptivist Theory of Proper Names", url: "essays/russelldesc.html" },
-            { title: "Modal Collapse and PSR", url: "essays/modalcollapse.html" }
-            // Add more essays as needed
-        ];
 
-        function toggleSection(sectionId) {
-            var section = document.getElementById(sectionId);
-
-            if (section.style.display === "none") {
-                section.style.display = "block";
-            } else {
-                section.style.display = "none";
-            }
-        }
-
-        function loadEssaysContent() {
-            var essaysSection = document.getElementById('essays');
-            var essaysContent = document.getElementById('essaysContent');
-
-            // Clear previous content
-            essaysContent.innerHTML = "";
-
-            // Create a list of links to essays
-            var essaysList = document.createElement('ul');
-            essaysData.forEach(function (essay) {
-                var listItem = document.createElement('li');
-                var link = document.createElement('a');
-                link.href = essay.url;
-                link.textContent = essay.title;
-                listItem.appendChild(link);
-                essaysList.appendChild(listItem);
-            });
-
-            // Append the list to the essaysContent div
-            essaysContent.appendChild(essaysList);
-
-            // Toggle the visibility of the essays section
-            toggleSection('essays');
-        }
-    </script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>

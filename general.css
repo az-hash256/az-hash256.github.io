@@ -48,13 +48,14 @@ a:link {
     text-decoration: none;
 }
 
+a:hover {
+    color: white;
+}
+
 a:visited {
     color: #61538D;
 }
 
-a:hover {
-    color: white;
-}
 
 a:active {
     color: #61538D;
@@ -92,14 +93,41 @@ h1 {
     text-align: center;
 }
 
-.nav-pills>li>a {
-    color: #c2c4c3;
+/* Default styling for nav-pills */
+.nav-pills li a {
+    color: #61538D;
+    background-color: #1E1E1E;
 }
 
-.nav-pills>li.active>a,
-.nav-pills>li.active>a:hover,
-.nav-pills>li.active>a:focus {
+.nav-pills li a:focus {
+    color: #61538D;
+    background-color: #1E1E1E;
+}
+
+/* Hover styling for nav-pills */
+.nav-pills li a:hover {
+    color: #1E1E1E;
     background-color: #61538D;
-    color: #fff;
 }
 
+/* Clicked styling for nav-pills */
+.nav-pills li.active a {
+    color: #61538D;
+    background-color: #1E1E1E;
+}
+
+.about-me-box {
+    background-color: #141314;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    max-width: 800px; /* Adjust the max-width to your preference */
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+.about-me-paragraph {
+    font-size: 20px;
+    color: #61538D;
+    text-align: left;
+}
