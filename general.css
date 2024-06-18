@@ -8,7 +8,7 @@ html, body {
     padding: 0;
     background-color: #141314;
     font-family: 'Iosevka', Roboto, Arial;
-    color: #61538D;
+    color: #7EBAE4;
 }
 
 .Container {
@@ -31,7 +31,7 @@ ul {
     padding: 20px;
     margin: 0;
     font-size: 20px;
-    color: #61538D;
+    color: #7EBAE4;
     margin-left: 10px; /* Adjust the left margin to your preference */
 }
 
@@ -40,11 +40,11 @@ img {
 }
 
 .header {
-    color: #61538D;
+    color: #7EBAE4;
 }
 
 a:link {
-    color: #61538D;
+    color: #7EBAE4;
     text-decoration: none;
 }
 
@@ -53,21 +53,21 @@ a:hover {
 }
 
 a:visited {
-    color: #61538D;
+    color: #7EBAE4;
 }
 
 
 a:active {
-    color: #61538D;
+    color: #7EBAE4;
 }
 
 p {
-    color: #61538D;
+    color: #7EBAE4;
     text-align: center;
 }
 
 h1 {
-    color: #61538D;
+    color: #7EBAE4;
     font-size: 50px;
     font-family: 'Iosevka', Roboto, Arial;
     text-align: center;
@@ -89,30 +89,30 @@ h1 {
 }
 
 .sidebar h2 {
-    color: #61538D;
+    color: #7EBAE4;
     text-align: center;
 }
 
 /* Default styling for nav-pills */
 .nav-pills li a {
-    color: #61538D;
+    color: #7EBAE4;
     background-color: #1E1E1E;
 }
 
 .nav-pills li a:focus {
-    color: #61538D;
+    color: #7EBAE4;
     background-color: #1E1E1E;
 }
 
 /* Hover styling for nav-pills */
 .nav-pills li a:hover {
     color: #1E1E1E;
-    background-color: #61538D;
+    background-color: #7EBAE4;
 }
 
 /* Clicked styling for nav-pills */
 .nav-pills li.active a {
-    color: #61538D;
+    color: #7EBAE4;
     background-color: #1E1E1E;
 }
 
@@ -128,6 +128,6 @@ h1 {
     
 .about-me-paragraph {
     font-size: 20px;
-    color: #61538D;
+    color: #7EBAE4;
     text-align: left;
 }

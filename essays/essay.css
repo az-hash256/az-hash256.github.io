@@ -7,17 +7,17 @@ html, body {
     margin: 0px;
     padding: 0px;
     background-color: #141314;
-    color: #61538D; /* Set the text color to #61538D */
+    color: #7EBAE4;
     font-size: 20px;
-    font-family: 'Iosevka', Roboto, Arial; /* Iosevka is now the primary font, followed by Roboto and Arial */
+    font-family: 'Iosevka', Roboto, Arial;
 }
 
 p {
-    color: #61538D; /* Set the text color to #61538D */
+    color: #7EBAE4;
 }
 
 h1, h2, h3 {
-    color: #61538D; /* Set the text color to #61538D */
+    color: #7EBAE4;
 }
 
 .table_of_contents {
@@ -25,12 +25,12 @@ h1, h2, h3 {
 }
 
 a:link {
-    color: #61538D; /* Set the text color to #61538D */
+    color: #7EBAE4;
     text-decoration: none;
 }
 
 a:visited {
-    color: #61538D; /* Set the text color to #61538D */
+    color: #7EBAE4; 
 }
 
 a:hover {
@@ -38,6 +38,6 @@ a:hover {
 }
 
 a:active {
-    color: #61538D; /* Set the text color to #61538D */
+    color: #7EBAE4;
 }
  
